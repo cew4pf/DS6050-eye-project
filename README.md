@@ -19,7 +19,7 @@ The Ocular Disease Intelligent Recognition (ODIR) dataset on Kaggle provided by 
 ### **Explanation of Files**
 * DS_6050_Project_Proposal.pdf: initial project proposal submitted on March 23, 2022
 * DS_6050_Project_Sources.pdf: online sources used for help with cleaning data and creating neural networks
-* data_preprocessing.ipynb: Jupyter notebook to access the dataset from Kaggle and process it (assign correct class labels to the images, balance the classes, etc.)
+* data_preprocessing.ipynb: Jupyter notebook to access the dataset from Kaggle and process it (assign correct class labels to the images, balance the classes, etc.) and visualize the images with class labels
   * Requires `TensorFlow`, Kaggle API access
 * dl_proj_models.slurm: slurm file to submit python files using `TensorFlow` to the Slurm Workload Manager (i.e., via Rivanna)
  * Takes a user argument for a python file to submit (e.g., `sbatch dl_proj_models.slurm <filename.py>`)

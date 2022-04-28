@@ -23,7 +23,7 @@ The Ocular Disease Intelligent Recognition (ODIR) dataset on Kaggle provided by 
   * Requires `TensorFlow`, Kaggle API access
 * dl_proj_models.slurm: slurm file to submit python files using `TensorFlow` to the Slurm Workload Manager (i.e., via Rivanna)
  * Takes a user argument for a python file to submit (e.g., `sbatch dl_proj_models.slurm <filename.py>`)
-* ensemble_model.ipynb: evaluating individual and weighted ensemble models created using transfer learning (`MobileNetV2`, `InceptionNetV3`, `VGG16`, `ResNet50V2`, `EfficientNetV2`)
+* ensemble_and_custom_models.ipynb: evaluating individual and weighted ensemble models created using transfer learning (`MobileNetV2`, `InceptionNetV3`, `VGG16`, `ResNet50V2`, `EfficientNetV2`) and the custom CNN model
 
 Models: folder containing python files for training models created using transfer learning and a custom Convolutional Neural Network (CNN)
  * dl_project_custom.py: custom CNN with multiple alternating convolution and max pooling layers, followed by fully connected, batch normalization, and dropout layers

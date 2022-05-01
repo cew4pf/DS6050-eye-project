@@ -112,7 +112,6 @@ model = keras.models.Sequential([
     DefaultConv2D(filters=128),
     keras.layers.MaxPooling2D(pool_size=2),
 
-    # dense and dropout layers --> add regularizers, increse dropout from 0.2 to 0.5
     keras.layers.Flatten(),
     keras.layers.Dense(units=512, activation='relu'),
     keras.layers.Dense(units=256, activation='relu'),

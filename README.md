@@ -17,31 +17,31 @@ The Ocular Disease Intelligent Recognition (ODIR) dataset on Kaggle provided by 
 
 
 ### **Explanation of Files**
-* DS_6050_Project_Proposal.pdf: initial project proposal submitted on March 23, 2022
-* DS_6050_Project_Sources.pdf: online sources used for help with cleaning data and creating neural networks
-* data_preprocessing.ipynb: Jupyter notebook to access the dataset from Kaggle and process it (assign correct class labels to the images, balance the classes, etc.), visualize the images with class labels, and calculate class weights for training models
+* **DS_6050_Project_Proposal.pdf**: initial project proposal submitted on March 23, 2022
+* **DS_6050_Project_Sources.pdf**: online sources used for help with cleaning data and creating neural networks
+* **data_preprocessing.ipynb**: Jupyter notebook to access the dataset from Kaggle and process it (assign correct class labels to the images, balance the classes, etc.), visualize the images with class labels, and calculate class weights for training models
   * Requires `TensorFlow`, Kaggle API access
-* dl_proj_models.slurm: slurm file to submit python files using `TensorFlow` to the Slurm Workload Manager (i.e., via Rivanna)
+* **dl_proj_models.slurm**: slurm file to submit python files using `TensorFlow` to the Slurm Workload Manager (i.e., via Rivanna)
  * Takes a user argument for a python file to submit (e.g., `sbatch dl_proj_models.slurm <filename.py>`)
-* ensemble_and_custom_models.ipynb: evaluating individual and weighted ensemble models created using transfer learning (`MobileNetV2`, `InceptionNetV3`, `VGG16`, `ResNet50V2`, `EfficientNetV2`) and the custom CNN model
+* **ensemble_and_custom_models.ipynb**: evaluating individual and weighted ensemble models created using transfer learning (`MobileNetV2`, `InceptionNetV3`, `VGG16`, `ResNet50V2`, `EfficientNetV2`) and the custom CNN model
 
 Models: folder containing python files for training models created using transfer learning and a custom Convolutional Neural Network (CNN)
- * dl_project_custom.py: custom CNN with multiple alternating convolution and max pooling layers, followed by fully connected, batch normalization, and dropout layers
- * [dl_project_efficient.py](https://www.tensorflow.org/api_docs/python/tf/keras/applications/efficientnet_v2/EfficientNetV2L): `EfficientNetV2` transfer learning model
- * dl_project_ensemble.py: weighted ensemble model using the five transfer learning models with different weights
- * [dl_project_inceptionnet.py](https://www.tensorflow.org/api_docs/python/tf/keras/applications/inception_v3/InceptionV3): `InceptionNetV3` transfer learning model
- * [dl_project_mobilenet.py](https://www.tensorflow.org/api_docs/python/tf/keras/applications/mobilenet_v2/MobileNetV2): `MobileNetV2` transfer learning model
- * [dl_project_res.py](https://www.tensorflow.org/api_docs/python/tf/keras/applications/resnet_v2/ResNet50V2): `ResNet50V2` transfer learning model
- * [dl_project_vgg.py](https://www.tensorflow.org/api_docs/python/tf/keras/applications/vgg16/VGG16): `VGG16` transfer learning model
+ * **dl_project_custom.py**: custom CNN with multiple alternating convolution and max pooling layers, followed by fully connected, batch normalization, and dropout layers
+ * **[dl_project_efficient.py](https://www.tensorflow.org/api_docs/python/tf/keras/applications/efficientnet_v2/EfficientNetV2L)**: `EfficientNetV2` transfer learning model
+ * **dl_project_ensemble.py**: weighted ensemble model using the five transfer learning models with different weights
+ * **[dl_project_inceptionnet.py](https://www.tensorflow.org/api_docs/python/tf/keras/applications/inception_v3/InceptionV3)**: `InceptionNetV3` transfer learning model
+ * **[dl_project_mobilenet.py](https://www.tensorflow.org/api_docs/python/tf/keras/applications/mobilenet_v2/MobileNetV2)**: `MobileNetV2` transfer learning model
+ * **[dl_project_res.py](https://www.tensorflow.org/api_docs/python/tf/keras/applications/resnet_v2/ResNet50V2)**: `ResNet50V2` transfer learning model
+ * **[dl_project_vgg.py](https://www.tensorflow.org/api_docs/python/tf/keras/applications/vgg16/VGG16)**: `VGG16` transfer learning model
 
 Training_Output: folder containing the output from slurm jobs running
-* dlproj_custom-37680066.txt: output from `sbatch dl_proj_models.slurm dl_project_custom.py`
-* dlproj_eff-36851516.txt: output from `sbatch dl_proj_models.slurm dl_project_efficient.py`
-* dlproj_ensemble-37443516.txt: output from `sbatch dl_proj_models.slurm dl_project_ensemble.py`
-* dlproj_inc-36671798.txt: output from `sbatch dl_proj_models.slurm dl_project_inceptionnet.py`
-* dlprog_mn-36630848.txt: : output from `sbatch dl_proj_models.slurm dl_project_mobilenet.py`
-* dlproj_res-36813958.txt: output from `sbatch dl_proj_models.slurm dl_project_res.py`
-* dlproj_vgg-36710683.txt: output from `sbatch dl_proj_models.slurm dl_project_vgg.py`
+* **dlproj_custom-37680066.txt**: output from `sbatch dl_proj_models.slurm dl_project_custom.py`
+* **dlproj_eff-36851516.txt**: output from `sbatch dl_proj_models.slurm dl_project_efficient.py`
+* **dlproj_ensemble-37443516.txt**: output from `sbatch dl_proj_models.slurm dl_project_ensemble.py`
+* **dlproj_inc-36671798.txt**: output from `sbatch dl_proj_models.slurm dl_project_inceptionnet.py`
+* **dlprog_mn-36630848.txt**: : output from `sbatch dl_proj_models.slurm dl_project_mobilenet.py`
+* **dlproj_res-36813958.txt**: output from `sbatch dl_proj_models.slurm dl_project_res.py`
+* **dlproj_vgg-36710683.txt**: output from `sbatch dl_proj_models.slurm dl_project_vgg.py`
 
 
 ### **Sources**

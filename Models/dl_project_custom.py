@@ -76,7 +76,8 @@ train_ds = train_ds.prefetch(buffer_size = AUTOTUNE)
 validation_ds = validation_ds.prefetch(buffer_size = AUTOTUNE)
 
 
-
+# Géron, Aurélien, Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow: Concepts, Tools, and Techniques to Build Intelligent Systems (O'Reilly Media, 2019) (for plotting images)
+# Tutorial 2.6 – Introduction to Artificial Neural Networks with Keras
 DefaultConv2D = partial(keras.layers.Conv2D,
                         kernel_size=3, activation='relu', padding="SAME")
 

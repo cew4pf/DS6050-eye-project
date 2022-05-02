@@ -25,7 +25,7 @@ The Ocular Disease Intelligent Recognition (ODIR) dataset on Kaggle provided by 
  * Takes a user argument for a python file to submit (e.g., `sbatch dl_proj_models.slurm <filename.py>`)
 * **ensemble_and_custom_models.ipynb**: evaluating individual and weighted ensemble models created using transfer learning (`MobileNetV2`, `InceptionNetV3`, `VGG16`, `ResNet50V2`, `EfficientNetV2`) and the custom CNN model
 
-Models: folder containing python files for training models created using transfer learning and a custom Convolutional Neural Network (CNN)
+**Models**: folder containing python files for training models created using transfer learning and a custom Convolutional Neural Network (CNN)
  * **dl_project_custom.py**: custom CNN with multiple alternating convolution and max pooling layers, followed by fully connected, batch normalization, and dropout layers
  * **[dl_project_efficient.py](https://www.tensorflow.org/api_docs/python/tf/keras/applications/efficientnet_v2/EfficientNetV2L)**: `EfficientNetV2` transfer learning model
  * **dl_project_ensemble.py**: weighted ensemble model using the five transfer learning models with different weights
@@ -34,7 +34,7 @@ Models: folder containing python files for training models created using transfe
  * **[dl_project_res.py](https://www.tensorflow.org/api_docs/python/tf/keras/applications/resnet_v2/ResNet50V2)**: `ResNet50V2` transfer learning model
  * **[dl_project_vgg.py](https://www.tensorflow.org/api_docs/python/tf/keras/applications/vgg16/VGG16)**: `VGG16` transfer learning model
 
-Training_Output: folder containing the output from slurm jobs running
+**Training_Output**: folder containing the output from slurm jobs running
 * **dlproj_custom-37680066.txt**: output from `sbatch dl_proj_models.slurm dl_project_custom.py`
 * **dlproj_eff-36851516.txt**: output from `sbatch dl_proj_models.slurm dl_project_efficient.py`
 * **dlproj_ensemble-37443516.txt**: output from `sbatch dl_proj_models.slurm dl_project_ensemble.py`
